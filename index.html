@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PortfólioHub | Daniel Nery</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(135deg,#1e293b,#0f172a);
+      padding:70px 20px;
+      text-align:center;
+      border-bottom:3px solid #2563eb;
+    }
+
+    header h1{
+      font-size:3rem;
+      color:#60a5fa;
+      margin-bottom:10px;
+    }
+
+    header p{
+      color:#cbd5e1;
+      font-size:1.1rem;
+    }
+
+    nav{
+      background:#111827;
+      padding:15px;
+      text-align:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#60a5fa;
+    }
+
+    section{
+      max-width:1100px;
+      margin:auto;
+      padding:60px 20px;
+    }
+
+    .titulo{
+      font-size:2rem;
+      color:#60a5fa;
+      margin-bottom:30px;
+      border-left:5px solid #2563eb;
+      padding-left:12px;
+    }
+
+    .card{
+      background:#1e293b;
+      padding:30px;
+      border-radius:15px;
+      margin-bottom:25px;
+      transition:0.3s;
+      border:1px solid transparent;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      border:1px solid #60a5fa;
+    }
+
+    .destaque{
+      color:#60a5fa;
+      font-weight:bold;
+    }
+
+    .linkedin{
+      display:inline-block;
+      margin-top:15px;
+      text-decoration:none;
+      background:#2563eb;
+      color:white;
+      padding:12px 20px;
+      border-radius:8px;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    .linkedin:hover{
+      background:#1d4ed8;
+    }
+
+    .skills{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .skill-box{
+      background:#1e293b;
+      padding:25px;
+      border-radius:12px;
+    }
+
+    .skill-box h3{
+      color:#93c5fd;
+      margin-bottom:15px;
+    }
+
+    ul{
+      padding-left:20px;
+    }
+
+    .projetos{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    footer{
+      background:#111827;
+      text-align:center;
+      padding:25px;
+      color:#94a3b8;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+      header h1{
+        font-size:2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>PortfólioHub</h1>
+    <p>Daniel Nery Quintana | Engenharia de Software</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#projetos">Projetos</a>
+  </nav>
+
+  <section id="sobre">
+    <h2 class="titulo">Sobre</h2>
+
+    <div class="card">
+
+      <h3>Engenharia de Software - UniCEUB Brasília</h3>
+
+      <br>
+
+      <p>
+        <span class="destaque">Daniel Nery Quintana</span>
+      </p>
+
+      <br>
+
+      <p>
+        Estudante de Engenharia de Software com foco em banco de dados em Java,
+        computação em nuvem e SQL.
+      </p>
+
+      <br>
+
+      <h3>Perfil - Quem é Daniel Nery?</h3>
+
+      <br>
+
+      <p>
+        Sou estudante do primeiro semestre de Engenharia de Software do UniCEUB.
+        Tenho certificações complementares e busco entregar soluções utilizando
+        Java, priorizando segurança e velocidade.
+      </p>
+
+      <br>
+
+      <p>
+        Falo <span class="destaque">Português</span> e
+        <span class="destaque">Inglês</span>.
+      </p>
+
+      <a 
+        class="linkedin"
+        href="https://www.linkedin.com/in/daniel-nery-quintana-667667305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        target="_blank"
+      >
+        Acessar LinkedIn
+      </a>
+
+    </div>
+  </section>
+
+  <section id="habilidades">
+
+    <h2 class="titulo">Habilidades</h2>
+
+    <div class="skills">
+
+      <div class="skill-box">
+        <h3>Técnicas</h3>
+
+        <ul>
+          <li>Lógica de Programação</li>
+          <li>Algoritmos</li>
+          <li>Java</li>
+        </ul>
+      </div>
+
+      <div class="skill-box">
+        <h3>Cloud & Ferramentas</h3>
+
+        <ul>
+          <li>Git / GitHub</li>
+          <li>Pacote Office</li>
+          <li>Oracle</li>
+          <li>AWS</li>
+        </ul>
+      </div>
+
+      <div class="skill-box">
+        <h3>Comportamentais</h3>
+
+        <ul>
+          <li>Aprendizagem rápida</li>
+          <li>Comunicação</li>
+          <li>Proatividade</li>
+          <li>Adaptação</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="projetos">
+
+    <h2 class="titulo">Projetos</h2>
+
+    <div class="projetos">
+
+      <div class="card">
+        <h3>Gestão de Gastos</h3>
+
+        <br>
+
+        <p>
+          Projeto acadêmico desenvolvido para controle financeiro,
+          organização de despesas e acompanhamento de gastos.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Portfólio</h3>
+
+        <br>
+
+        <p>
+          Projeto acadêmico criado para apresentação profissional,
+          habilidades técnicas e experiências.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Aulas Práticas</h3>
+
+        <br>
+
+        <p>
+          Exercícios e atividades desenvolvidas durante as aulas práticas
+          da graduação em Engenharia de Software.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 - PortfólioHub | Daniel Nery Quintana</p>
+  </footer>
+
+</body>
+</html>
